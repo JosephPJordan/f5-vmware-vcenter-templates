@@ -83,9 +83,9 @@ This section contains content library guidance.  For information on VMware conte
 
      - Click **Browse** to locate the required **vmdk** files,
      - Highlight both files and then click **Open**.
-     - Note green check marks now located next to each file required.
+     - Note green check marks now located next to each required file .
      - Click **Ok**.
-     - Note and/or change item name.
+     - Note and/or change the item name.
      - Click **Ok** to upload the BIG-IP VE image into the content library.
 
 
@@ -101,13 +101,13 @@ The following contains an example of the client setup using Ubuntu, however it s
       - ```sudo apt install npm``` (this will install node package manager)
       - ```sudo apt install genisoimage``` (this will install the ISO creator required by templates)
       - load node package required by templates:
-          - change directory to git project **f5-vmware-vcenter-templates**
-          - install dependencies: ```npm install –production ```
+          - Change directory (cd) to the git project **f5-vmware-vcenter-templates**
+          - Install dependencies: ```npm install –production ```
 
   3.  Modify the **settings.js** for the template you wish to use (see [Example Script](#example-script))
 
   4.  Run standalone node script:
-      - change directory to script you wish to run, for example: **/experimental/standalone/3nic/existing_stack/BYOL/**.
+      - Change directory to script you wish to run, for example: **/experimental/standalone/3nic/existing_stack/BYOL/**.
       - Run the script, for example **node f5-existing-stack-byol-3nic-big-ip.js**.
 
 #### Example script
@@ -157,7 +157,7 @@ module.exports = {
 ```
 
 ### Modifying the template
-If necessary, you can modify/customize the BIG-IP configuration portion of the template itself. The file is located at https://github.com/F5Networks\f5-vmware-vcenter-templates\experimental\standalone\3nic\existing_stack\BYOL\user_data_stencil\user_data_template.
+If necessary, you can modify/customize the BIG-IP configuration portion of the template itself. The file is located at https://github.com/F5Networks/f5-vmware-vcenter-templates/blob/master/experimental/standalone/3nic/existing_stack/BYOL/user_data_stencil/user_data_template.
 To modify the template, edit the lines between   
 
 ```
